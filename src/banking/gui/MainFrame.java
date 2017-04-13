@@ -48,6 +48,11 @@ class MainFrame extends JFrame {
 
 	
 	private void constructForm() {
+
+		//to fix bug-1
+		final int TEXTFIELDLENGTH = 20;
+
+		
 		//*** Make these read from properties
 		typeLabel		= new JLabel(props.getProperty("TypeLabel"));
 		nameLabel		= new JLabel(props.getProperty("NameLabel"));
@@ -55,7 +60,7 @@ class MainFrame extends JFrame {
 
 		Object[] accountTypes = {"Savings", "Checking"};
 		typeOptions = new JComboBox(accountTypes);
-		nameField = new JTextField(20);
+		nameField = new JTextField(TEXTFIELDLENGTH);
 		balanceField = new JTextField(20);
 
 		newAccountButton = new JButton("New Account");
