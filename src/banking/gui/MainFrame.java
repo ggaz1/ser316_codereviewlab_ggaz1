@@ -49,7 +49,7 @@ class MainFrame extends JFrame {
 	
 	private void constructForm() {
 
-		//fixing bug-1
+		//to fix bug-1
 		final int TEXTFIELDLENGTH = 20;
 
 		
